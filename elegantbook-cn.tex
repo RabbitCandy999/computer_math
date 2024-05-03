@@ -1,0 +1,52 @@
+\documentclass[lang=cn,newtx,10pt,scheme=chinese]{elegantbook}
+
+\title{数学探秘}
+\subtitle{关于计算机数学的思考}
+
+\author{糖糖 \& 小慧}
+\date{2024/2/18}
+\version{4.5}
+
+\setcounter{tocdepth}{3}
+
+% \logo{logo-blue.png}
+\cover{cover.jpg}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+% 修改标题页的橙色带
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+	
+\chapter{初等数论与多项式}
+数论的本质是研究整数之间的关系，我们可以知道，加法、减法、乘法对于整数是一个封闭的运算. 但是两个整数之间的除法不一定是一个整数，所以，数论中的许多问题都是在研究两个数之间的除法.
+
+然而多项式的定理也与数论的定理相似，所以在这里，我们会把多项式的定理与数论的定理进行比较.
+
+\section{整除的概念及其基本性质}
+\begin{definition}[整数整除的定义]
+对任给的两个整数$a,b$，其中$a\neq 0$，如果存在整数$q$，使得$b=aq$，那么称$b$能够被$a$整除（或者$a$整除$b$），记作$a\mid b$，否则，称$a$不整除$b$，记作$a\nmid b$.
+\end{definition}
+
+\begin{definition}[整数的因数与倍数]
+如果$a\mid b$，那么称$a$为$b$的因数，$b$为$a$的倍数.
+\end{definition}
+
+利用整除的定义，可以非常容易地推导出下面经常能用到的一些性质.
+
+\begin{property}
+如果$a\mid b$，则$a\mid (-b)$，反过来也成立；如果$a\mid b$，则$(-a)\mid b$，同样反过来也成立.
+\end{property}
+
+\end{document}
